@@ -3,7 +3,7 @@ const app = new express();
 const data = require("./dataset.json")
 app.use(express.json())
 const fs = require("fs");
-//CURD-operations
+//CRUD-operations
 app.get("/hospital", (req, res) => {
     res.send(data);
 })
