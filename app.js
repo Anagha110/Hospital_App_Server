@@ -48,10 +48,6 @@ app.delete("/hospital/:name", (req, res) => {
     })
 })
 
-//1.reading the json file datas
-fs.readFile("./dataset.json",(err,data)=>{
-        if(err)console.log(err);
-        else console.log("reading the files in the hospital server app data  :  "+data);
-    })
+
 app.listen(3500);
 console.log("server listening to port 3500");
